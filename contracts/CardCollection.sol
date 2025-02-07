@@ -9,7 +9,7 @@ contract CardCollection is ERC721URIStorage, Ownable {
     mapping(address => uint256) public cooldowns;
     mapping(uint256 => address[]) public previousOwners;
 
-    constructor() ERC721("CardCollection", "CARD") {}
+    constructor() ERC721("CardCollection", "CARD") Ownable(msg.sender) {}
 
     function mintCard(string memory tokenURI) external {
         require(balanceOf(msg.sender) < MAX_OWNED_CARDS, "Ownership limit reached");
