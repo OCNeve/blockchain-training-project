@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/olly/Projects/blockchain-project/web3-card-game/contracts/CardCollection.sol": {
-      "lastModificationDate": 1738925402737,
-      "contentHash": "ac9e3d8f78b49c64929f24e4843a3294",
+      "lastModificationDate": 1739789425621,
+      "contentHash": "e230e5d5d19e3c21d216438d2bb6034b",
       "sourceName": "contracts/CardCollection.sol",
       "solcConfig": {
         "version": "0.8.20",

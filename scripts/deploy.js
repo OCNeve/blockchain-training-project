@@ -3,9 +3,9 @@ const hre = require("hardhat");
 async function main() {
     const CardCollection = await hre.ethers.getContractFactory("CardCollection");
     const cardCollection = await CardCollection.deploy();
-
     await cardCollection.waitForDeployment();
-    console.log("CardCollection deployed to:", cardCollection.address);
+    console.log("Contract deployed to:", cardCollection.target);
+
 }
 
 // Run the script using Hardhat's environment
